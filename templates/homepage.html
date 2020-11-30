@@ -43,10 +43,7 @@
     <h1 style="font-size: 50px;">Automated Job Searcher</h1>
     <h1>By: Caroline Benson, Susanna D'Souza, and Shoaib Rahaman</h1>
     <h1 style="text-decoration: underline; font-size: 30px;">The Big Idea</h1>
-    <p>The goal of this project is to webscrape Indeed website for a list of job results that match position and
-        location preferences and email them to the user. The user also has the option of selecting whether they'd like
-        to schedule this webscraper to give them a list of jobs the following week as well. All of this can be done on
-        the user website created.</p>
+    <p>Automated Job Searcher is a simple to use program that emails a user a list of all jobs found on Indeed that meet the position and location criteria given. The idea for Automated Job Searcher sparked out of the common problem our team could relate to as seniors at Babson college who were either looking for a job or knew others who were searching for a job during 2020's uncertain times. We wanted to make the job hunting process more efficent where we could receive a list of all the jobs that met our position and location requirements, rather than having to spend a lot of time clicking through pages of possible jobs and only liking five after all that time. Since this project was to try to automate something to be more efficient this was the perfect project to work on because it could be automated it mattered to us..</p>
     <p>In order to use the following code, one would need to open the website html name in their browser. After
         inputting the information regarding their location, position, scheduling, and emailing preferences and hitting
         submit, the html will link to the webscrape.py or email_schedule.py and run the webscraping.py code using the
@@ -78,34 +75,35 @@
         The program's first part of webscrapping was necessary as there were no free available APIs for any of the popular job boards used.
         The main function is the final function that ties all the multiple webscraping functions together.
 
-        *Insert image of the most important function*
+        <img src="photo 1.jpg" alt="web scrape">
         
         The second part of the project was understanding how to schedule the webscraping to repeat after a certain given time. Our group decided that we'd give the user the option to select scheduling the webscraping weekly. Using the https://dev.to/bhupesh/a-simple-scheduler-in-python-49di article on scheduling, we were able to create the send_jobs function that would have scheduling off as a default unless the user selects "yes" aka "True", then the program would be scheduled weekly.
         
-        *Insert image of the send_job function*
+        <img src="photo 2.jpg" alt="job function">
         
         The third part of the project was the emailing of the results. This part was extremely important as it was also the method that joined all the code and html together. It took into account the webscraping results and scheduling preerences that initially came from the user website and using an html email template, sent the user the results. We utilized multiple sources to create this function as well as help from Professor Zhi Li.
         
-        *Insert image of the email function*</p>
+        <img src="picture 3.jpg" alt="email"></p>
     <h2>Results</h2>
     <p>Here is a look at the results achieved by this program.
 
         1. Here are the webscraping results that the code brings:
         
-        *Insert image of the CSV results file*
+        <img src="picture 4 jpg" alt="csv">
         
         2. The CSV file's information is then sent as an email to the user:
         
-        *Insert Image of the Email Sent to User*
+        <img src="photo 5.jpg" alt="pic">
+
         Now, it is important to note that in theory the scheduling code should work, however, it was never tested on the weekly basis as it would require the computer constantly on and running. This is an area that still needs work and would be something we would have researched further and implemented, if there was more time. Figuring out how to have the program running for a week in the background would be the next thing we'd tackle.
 
         As a group, there are multiple results that we've achieved:
         
-        1. **Successful Pair Programming**: We worked together as a team, pair programming on multiple facets of the project where we learned visual code tips and tricks from each other, brainstormed implementation methods as a team, and were able to bypass challenges with each other's help.
+        1. We worked together as a team, pair programming on multiple facets of the project where we learned visual code tips and tricks from each other, brainstormed implementation methods as a team, and were able to bypass challenges with each other's help.
            
-        2. **Learned Webscraping**: While our team varies in webscrapping abilities, we all learned  a little about it(this was dependent on our responsibilities on the team).
+        2. While our team varies in webscrapping abilities, we all learned  a little about it(this was dependent on our responsibilities on the team).
         
-        3. **Scheduling and emailing**: We learned how to use Python to schedule code and send Emails.</p>
+        3. We learned how to use Python to schedule code and send Emails.</p>
 
     <h2>Project Evolution</h2>
     <p>Automated Job Searcherhas evolved plenty since the start of the project. In the beginning the idea was to use a website's API to get information, have a database that holds usernames and passwords for users, and to use that database to store all the jobs already sent so that each week only new jobs are sent. What we learned is that while these are great ideas, we first needed to scale down our idea to the bare minimum with one user in mind *and then* build from there.
