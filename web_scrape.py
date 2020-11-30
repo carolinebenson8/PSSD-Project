@@ -201,7 +201,7 @@ def schd_jobs(position, location, sched=False):
 
 def main(position, location, schedule, recipient_email):
     content = schd_jobs(position, location, schedule)
-    es.send_job_list(content, recipient_email)
+    es.send_job_list(content, recipient_email, position, location)
 
 
 if __name__ == "__main__":
